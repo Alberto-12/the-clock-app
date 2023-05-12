@@ -1,13 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-button {
-  width: 100.67px;
-  height: 100.67px;
-  background-image: url("./assets/desktop/icon-sun.svg");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/desktop/bg-image-daytime.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-left: 26px;
+  padding-right: 25px;
+  
+}
+
+#quote-generator-div {
+  display: grid;
+  grid-template-columns: 20fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 8px;
+}
+
+#quote {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+#button {
+  width: 16.67px;
+  height: 16.67px;
+  background-image: url("./assets/desktop/icon-refresher.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+#author {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
