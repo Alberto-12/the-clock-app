@@ -15,13 +15,13 @@ body {
 #container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/mobile/bg-image-daytime.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/mobile/bg-image-daytime.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
   padding-left: 26px;
   padding-right: 25px;
-  
 }
 
 #quote-generator-div {
@@ -38,7 +38,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #button {
@@ -56,5 +56,52 @@ body {
   font-weight: 700;
   font-size: 12px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+#icon-greeting-div {
+  display: flex;
+
+  align-items: center;
+}
+
+#icon {
+  background-image: url("./assets/desktop/icon-sun.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 23.56px;
+  height: 23.56px;
+}
+
+#greeting {
+  margin-left: 16.56px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#time-timeZone {
+  display: flex;
+  align-items: flex-end;
+}
+
+#time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+#timeZone {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
 }
