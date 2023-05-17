@@ -57,11 +57,11 @@ body {
   font-size: 12px;
   line-height: 22px;
   color: #ffffff;
+  margin-bottom: 226.33px;
 }
 
 #icon-greeting-div {
   display: flex;
-
   align-items: center;
 }
 
@@ -104,4 +104,52 @@ body {
   font-size: 15px;
   line-height: 28px;
   color: #ffffff;
+  margin-bottom: 16px;
+}
+
+#location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+#more-button-div {
+  background-color: #ffffff;
+  width: 115px;
+  height: 39px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#more-button {
+  border-radius: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  background-color: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3.75px;
+  opacity: 0.5;
+  padding-left: 6%;
+}
+
+#arrow-down-div {
+  width: 32px;
+  height: 32px;
+  margin-left: 4%;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
