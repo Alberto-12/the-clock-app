@@ -26,7 +26,7 @@ body {
   
 }
 
-#quote-generator-div {
+/*#quote-generator-div {
   display: grid;
   grid-template-columns: 20fr 1fr;
   grid-template-rows: 1fr;
