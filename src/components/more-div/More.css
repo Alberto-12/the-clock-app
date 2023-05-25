@@ -6,10 +6,15 @@
   box-sizing: border-box;
 }
 
+#more-container {
+  padding-bottom: 40px;
+}
+
 #more-div {
-    padding-top: 20%;
+    
     padding-left: 26px;
     padding-right: 25px;
+    padding-bottom: 40px;
   }
   
   #icon-greeting-div {

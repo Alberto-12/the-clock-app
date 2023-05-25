@@ -3,7 +3,7 @@ import "./More.css";
 
 const More = () => {
     return (
-        <div>
+        <div id="more-container">
             <div id="more-div">
         <div id="good-morning-div">
           <div id="icon-greeting-div">
