@@ -2,7 +2,6 @@ import "./Generator.css";
 
 const Generator = () => {
     return (
-        <div>
             <div id="quote-generator-container">
         <div id="quote-generator-div">
           <p id="quote">
@@ -14,8 +13,6 @@ const Generator = () => {
         </div>
         <p id="author">Ada Lovelace</p>
   </div>
-            
-        </div>
     )
 }
 

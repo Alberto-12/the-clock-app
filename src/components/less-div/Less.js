@@ -2,8 +2,7 @@ import "./Less.css";
 
 const Less = () => {
     return (
-        <div>
-            <div id="less-div">
+        <div id="less-div">
           <p className="left-column">current time zone</p>
           <p className="right-column">Europe/London</p>
           <p className="left-column">day of the year</p>
@@ -13,7 +12,6 @@ const Less = () => {
           <p className="left-column">week number</p>
           <p className="right-column numbers">42</p>
 </div>
-        </div>
     )
 }
 
