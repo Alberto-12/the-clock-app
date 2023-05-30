@@ -57,7 +57,6 @@
   font-size: 15px;
   line-height: 28px;
   color: #ffffff;
-  
 }
 
 #location {
@@ -110,3 +109,64 @@
 /*#arrow-down {
     transform: rotate(180deg);
   }*/
+
+@media (min-width: 768px) {
+  #icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  #greeting {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  #time {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 175px;
+    line-height: 175px;
+    letter-spacing: -4.375px;
+  }
+
+  #timeZone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  #location {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  #more-button-div {
+    width: 146px;
+    height: 56px;
+  }
+
+  #more-button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 5px;
+  }
+
+  #arrow-down-div {
+    width: 40px;
+    height: 40px;
+  }
+}
