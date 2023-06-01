@@ -11,7 +11,7 @@ const Less = () => {
           <p className="right-column numbers">5</p>
           <p className="left-column">week number</p>
           <p className="right-column numbers">42</p>
-</div>
+        </div>
     )
 }
 

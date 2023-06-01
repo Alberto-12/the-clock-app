@@ -11,13 +11,14 @@
   height: 45%;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20.3871px);
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  padding-top: 48px;
-  padding-left: 26px;
-  padding-right: 26px;
-  padding-bottom: 48px;
   color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 12%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 5%;
+  
 }
 
 .left-column {
@@ -42,4 +43,24 @@
 
 .numbers {
   text-align: end;
+}
+
+@media (min-width: 768px) {
+
+  .left-column {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 2.6px;
+  }
+
+  .right-column {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
