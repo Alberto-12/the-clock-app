@@ -12,13 +12,13 @@
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20.3871px);
   color: white;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding-top: 12%;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-bottom: 5%;
-  
+  padding: 5%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .left-column {
@@ -42,10 +42,23 @@
 }
 
 .numbers {
-  text-align: end;
+  /*text-align: end;*/
 }
 
 @media (min-width: 768px) {
+
+  .section {
+    display: block;
+    align-items: initial;
+    justify-content: initial;
+    height: 10em;
+  }
+
+  .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .left-column {
     font-family: "Inter";
