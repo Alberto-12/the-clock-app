@@ -6,17 +6,17 @@
   box-sizing: border-box;
 }
 
-#more-container {
-  margin-top: 35%;
-  padding-left: 26px;
-  padding-right: 25px;
-  margin-bottom: 10%
-  
+#more-container{
+  padding: 30% 10% 10% 10%;
 }
 
 #icon-greeting-div {
   display: flex;
   align-items: center;
+}
+
+.clock {
+  margin-top: 5%;
 }
 
 #icon {
