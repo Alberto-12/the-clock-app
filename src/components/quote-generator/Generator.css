@@ -7,42 +7,68 @@
 }
 
 #quote-generator-container {
-  margin-top: 10%; 
+  padding: 10% 2% 10% 10%;
 }
 
 #quote-generator-div {
-    display: grid;
-    grid-template-columns: 20fr 1fr;
-    grid-template-rows: 1fr;
-    padding-left: 26px;
-    padding-right: 25px;
-    max-width: 361px;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  max-width: 361px;
+}
+
+#quote {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+#button {
+  width: 16.67px;
+  height: 16.67px;
+  background-image: url("../../assets/desktop/icon-refresher.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+#author {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  #quote-generator-container {
+    padding-left: 64px;
   }
-  
+  #quote-generator-div {
+    grid-template-columns: 14fr 1fr;
+    max-width: 80%;
+  }
+
   #quote {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
-    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
   }
-  
-  #button {
-    width: 16.67px;
-    height: 16.67px;
-    background-image: url("../../assets/desktop/icon-refresher.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: none;
-  }
-  
+
   #author {
-    padding-left: 26px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 22px;
-    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
   }
+
+  #button {
+    margin-top: 0.5em;
+  }
+}
