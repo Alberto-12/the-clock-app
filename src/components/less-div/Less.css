@@ -15,12 +15,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
 }
 
 .data-container {
   width: 323px;
   max-width: 323px;
-
 }
 
 .section-container {
@@ -53,23 +53,26 @@
   color: #303030;
 }
 
-.numbers {
-  /*text-align: end;*/
-}
-
 @media (min-width: 768px) {
-
-  .section {
-   /* display: block;
-    align-items: initial;
-    justify-content: initial;
-    height: 10em;*/
+  #less-div {
+    height: 50%;
   }
 
-  .container { 
+  .data-container {
+    width: 65%;
+    max-width: 65%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .section {
+    display: block;
+    margin-top: 20%;
+  }
+
+  .container {
   }
 
   .left-column {
