@@ -1,6 +1,6 @@
 import Generator from "./quote-generator/Generator";
 import More from "./more-div/More";
-/*import Less from "./less-div/Less";*/
+import Less from "./less-div/Less";
 import "./Clock.css";
 
 const Clock = ({ darkTheme }) => {
@@ -10,7 +10,7 @@ const Clock = ({ darkTheme }) => {
     <div  id="container" className={containerClassName}>
       <Generator />
       <More />
-      {/*<Less />*/}
+      <Less />
     </div>
   );
 };

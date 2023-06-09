@@ -29,3 +29,26 @@ div .dark {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (min-width: 768px) {
+  #container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/tablet/bg-image-daytime.jpg");
+  }
+
+div .dark {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/tablet/bg-image-nighttime.jpg");
+  
+}
+
+}
+
+@media (min-width: 1024px) {
+  #container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/desktop/bg-image-daytime.jpg");
+    background-size: cover;
+  }
+
+div .dark {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/desktop/bg-image-nighttime.jpg");
+}
+}

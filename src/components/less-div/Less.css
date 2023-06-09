@@ -7,8 +7,9 @@
 }
 
 #less-div {
+  
   width: 100%;
-  height: 40%;
+  height: 42%;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20.3871px);
   color: white;
@@ -16,6 +17,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5%;
+  /*display: none;*/
 }
 
 .data-container {
@@ -55,6 +57,7 @@
 @media (min-width: 768px) {
   #less-div {
     height: 50%;
+    padding-bottom: 10%;
   }
 
   .data-container {
@@ -89,5 +92,9 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+  }
+
+  #week-number {
+    margin-right: 5%;
   }
 }

@@ -6,17 +6,22 @@
   box-sizing: border-box;
 }
 
-#more-container{
-  padding: 20% 10% 10% 10%;
+/*#more-container {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 20%;
 }
 
 #icon-greeting-div {
+  height: 124%;
   display: flex;
   align-items: center;
-}
+}*/
 
 .clock {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 #icon {
@@ -29,18 +34,20 @@
 
 #greeting {
   margin-left: 16.56px;
+  margin-top: 10%;
   color: #ffffff;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
+  padding-bottom: 10%; 
 }
 
-#time-timeZone {
+/*#time-timeZone {
   display: flex;
   align-items: flex-end;
-}
+}*/
 
 #time {
   font-family: "Inter";
@@ -67,7 +74,7 @@
   font-size: 15px;
   line-height: 28px;
   color: #ffffff;
-  margin-bottom: 10%;
+  margin-bottom:;
 }
 
 #more-button-div {
@@ -112,10 +119,6 @@
   }*/
 
 @media (min-width: 768px) {
-
-  #more-container {
-    
-  }
   #icon {
     width: 24px;
     height: 24px;
@@ -173,5 +176,19 @@
   #arrow-down-div {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #more-container {
+    padding: 0 10% 10% 10%;
+  }
+
+  #greeting {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 }

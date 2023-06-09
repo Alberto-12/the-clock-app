@@ -8,6 +8,7 @@
 
 #quote-generator-container {
   padding: 10% 2% 10% 10%;
+  display: none;
 }
 
 #quote-generator-div {
@@ -70,5 +71,34 @@
 
   #button {
     margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #quote-generator-container {
+  padding: 5% 2% 10% 10%;
+  
+}
+
+#quote-generator-div {
+  grid-template-columns: 14fr 1fr;
+  max-width: 65%;
+}
+
+  #quote {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #autor {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
