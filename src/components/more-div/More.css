@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*#more-container {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+#icon-greeting-div {
+  height: 124%;
+  display: flex;
+  align-items: center;
+}*/
+
+.clock {
+  margin-top: 2%;
+}
+
+#icon {
+  background-image: url("../../assets/desktop/icon-sun.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 23.56px;
+  height: 23.56px;
+}
+
+#greeting {
+  margin-left: 16.56px;
+  margin-top: 10%;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 10%; 
+}
+
+/*#time-timeZone {
+  display: flex;
+  align-items: flex-end;
+}*/
+
+#time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+#timeZone {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+#location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom:;
+}
+
+#more-button-div {
+  background-color: #ffffff;
+  width: 115px;
+  height: 39px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#more-button {
+  border-radius: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  background-color: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3.75px;
+  opacity: 0.5;
+  padding-left: 6%;
+}
+
+#arrow-down-div {
+  width: 32px;
+  height: 32px;
+  margin-left: 4%;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#arrow-down {
+    transform: rotate(180deg);
+  }*/
+
+@media (min-width: 768px) {
+  #icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  #greeting {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  #time {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 175px;
+    line-height: 175px;
+    letter-spacing: -4.375px;
+  }
+
+  #timeZone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  #location {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  #more-button-div {
+    width: 146px;
+    height: 56px;
+  }
+
+  #more-button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 5px;
+  }
+
+  #arrow-down-div {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #more-container {
+    padding: 0 10% 10% 10%;
+  }
+
+  #greeting {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

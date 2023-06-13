@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#quote-generator-container {
+  padding: 10% 2% 10% 10%;
+  display: none;
+}
+
+#quote-generator-div {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  max-width: 361px;
+}
+
+#quote {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+#button {
+  width: 16.67px;
+  height: 16.67px;
+  background-image: url("../../assets/desktop/icon-refresher.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+#author {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  #quote-generator-container {
+    padding-left: 64px;
+  }
+  #quote-generator-div {
+    grid-template-columns: 14fr 1fr;
+    max-width: 80%;
+  }
+
+  #quote {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #author {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #button {
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #quote-generator-container {
+  padding: 5% 2% 10% 10%;
+  
+}
+
+#quote-generator-div {
+  grid-template-columns: 14fr 1fr;
+  max-width: 65%;
+}
+
+  #quote {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #autor {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
