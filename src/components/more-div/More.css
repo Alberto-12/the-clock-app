@@ -6,19 +6,21 @@
   box-sizing: border-box;
 }
 
-/*#more-container {
+#more-container {
   width: 94%;
+  height: 45%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin-left: 5%;
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
-#icon-greeting-div {
-  height: 124%;
+#greeting-div {
+  height: 10%;
   display: flex;
   align-items: center;
-}*/
+}
 
 .clock {
   margin-top: 2%;
@@ -44,10 +46,10 @@
   padding-bottom: 10%; 
 }
 
-/*#time-timeZone {
+#time-zone-div {
   display: flex;
   align-items: flex-end;
-}*/
+}
 
 #time {
   font-family: "Inter";
