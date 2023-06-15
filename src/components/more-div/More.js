@@ -30,11 +30,13 @@ const More = () => {
   <div id="time">11:37</div>
         <p id="timeZone">BST</p>
         </div>
+        <div id="city-button-div">
         <p className="clock" id="location">IN LONDON, UK</p>
         <div id="more-button-div">
         <button id="more-button">more</button>
         <div id="arrow-down-div">
           <img id="arrow-down" src={ArrowDown} alt="arrow down" />
+        </div>
         </div>
         </div>
         
