@@ -1,8 +1,11 @@
 import "./Less.css";
 
-const Less = () => {
+const Less = ({ darkTheme }) => {
+
+  const containerClassName = darkTheme ? "container dark" : "container";
+
   return (
-    <div id="less-div" class="container">
+    <div id="less-div" class="container" className={containerClassName}>
       <div className="data-container">
         <div className="section">
           <p className="left-column">current time zone</p>

@@ -17,7 +17,11 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5%;
-  display: none;
+  /*display: none;*/
+}
+
+.dark #less-div{
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .data-container {
@@ -43,6 +47,10 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #303030;
+}
+
+.dark .right-column, .left-column {
+  color:  #FFFFFF;
 }
 
 .right-column {
