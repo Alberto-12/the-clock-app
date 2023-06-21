@@ -1,9 +1,12 @@
 import Clock from './components/Clock'
 
 function App() {
+
+  const darkTheme = true;
+
   return (
     <div className="App">
-      <Clock darkTheme={true}/>
+      <Clock  darkTheme={darkTheme}/>
     </div>
   );
 }
