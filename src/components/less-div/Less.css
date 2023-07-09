@@ -17,7 +17,14 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   /*display: none;*/
+}
+
+#less-div.show {
+  opacity: 1;
+  
 }
 
 .dark #less-div{

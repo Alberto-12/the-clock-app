@@ -79,6 +79,27 @@
   margin-bottom: 10%;
 }
 
+/* Add these styles to your existing CSS file */
+
+.rotate-up {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+#more-button-div.rotate-up button {
+  background-color: red; /* Customize the button styles as needed */
+  color: white;
+}
+
+#more-button-div {
+  transition: all 0.5s ease-in-out; /* Slower transition duration */
+}
+
+#more-button-div button {
+  transition: all 0.5s ease-in-out; /* Slower transition duration */
+}
+
 #more-button-div {
   background-color: #ffffff;
   width: 115px;
@@ -86,10 +107,12 @@
   border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #more-button {
+  width: 47px;
+  min-width: 47px;
   border-radius: 28px;
   font-family: "Inter";
   font-style: normal;
@@ -102,13 +125,13 @@
   text-transform: uppercase;
   letter-spacing: 3.75px;
   opacity: 0.5;
-  padding-left: 6%;
+  margin-left: 10%;
 }
 
 #arrow-down-div {
   width: 32px;
   height: 32px;
-  margin-left: 4%;
+  margin-right: 2%;
   border-radius: 50%;
   background-color: black;
   display: flex;
