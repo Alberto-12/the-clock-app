@@ -7,16 +7,8 @@ const More = ({ toggleLess, toggleGenerator }) => {
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
-    if(!isExpanded) {
-      toggleLess();
-    } else {
-      setTimeout(() => {
-        toggleGenerator();
-
-      }, 300); // Wait for the Less component to transition out before toggling Generator
-    }
-    //toggleLess();// Call the toggleLess function passed as a prop
-    //toggleGenerator();// Call the toggleGenerator function passed as a prop
+      toggleGenerator();
+    
   };
 
   return (

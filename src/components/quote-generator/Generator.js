@@ -16,5 +16,5 @@ const Generator = () => {
     )
 }
 
-export default Generator
+export default Generator;
 

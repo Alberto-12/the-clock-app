@@ -7,13 +7,13 @@
 }
 
 #more-container {
-  
+  height: 272px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:space-between;
   margin-left: 5%;
-  margin-top: 18%;
-  padding-bottom: 10%;
+  margin-top: 15%;
+  margin-bottom: 8%;
 }
 
 #greeting-div {
@@ -144,6 +144,9 @@
   }*/
 
 @media (min-width: 768px) {
+#more-container{
+  height: 367px;
+}
   #icon {
     width: 24px;
     height: 24px;

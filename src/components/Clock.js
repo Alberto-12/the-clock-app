@@ -7,19 +7,18 @@ import "./Clock.css";
 const Clock = ({ darkTheme, showLess, toggleLess }) => {
   const [showGenerator, setShowGenerator] = useState(true);
 
-  const containerClassName = darkTheme ? "dark" : "";
-
   //const lessClassName = showLess ? "show" : "";
 
   const toggleGenerator = () => {
     setShowGenerator(!showGenerator);
+    toggleLess();
   };
 
   return (
-    <div id="container" className={containerClassName}>
+    <div id="container" className={darkTheme ? "dark" : ""}>
       {showGenerator && <Generator />}
-      <More toggleLess={toggleLess} toggleGenerator={toggleGenerator} />
-      {showLess && !showGenerator && <Less darkTheme={false}  />}
+      <More toggleGenerator={toggleGenerator} />
+      {showLess && <Less />}
     </div>
   );
 };
