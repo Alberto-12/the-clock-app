@@ -7,6 +7,7 @@
 }
 
 #quote-generator-container {
+  height: 60%;
   padding: 10% 2% 10% 10%;
   /*display: none;*/
 }
@@ -46,6 +47,7 @@
 
 @media (min-width: 768px) {
   #quote-generator-container {
+
     padding-left: 64px;
   }
   #quote-generator-div {
@@ -77,6 +79,7 @@
 @media (min-width: 1024px) {
 
   #quote-generator-container {
+    height: 55%;
   padding-top: 5%; 
   padding-right:2%; 
   padding-bottom:0; 
