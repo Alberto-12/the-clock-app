@@ -7,7 +7,7 @@
 }
 
 #more-container {
-  padding-top: 99px;
+  padding-top: 25%;
   padding-left: 5%;
   padding-bottom: 8%;
 }
@@ -39,8 +39,8 @@
 }
 
 #time-zone-div {
-  display: flex;
-  align-items: flex-end;
+  /*display: flex;
+  align-items: center;*/
 }
 
 #time {
@@ -52,7 +52,7 @@
   color: #ffffff;
 }
 
-#timeZone {
+#abbreviation {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
@@ -69,6 +69,7 @@
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 48px;
+  text-transform: uppercase;
 }
 
 /* Add these styles to your existing CSS file */
@@ -200,6 +201,8 @@
 
 @media (min-width: 1024px) {
   #more-container {
+    padding-top: 4%;
+    padding-bottom: 0;
   }
 
   #greeting {
@@ -207,6 +210,10 @@
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 4px;
+  }
+
+  #time-zone-div{
+    height: 175px;
   }
 
   #time {
@@ -226,14 +233,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 4%;
   }
 
   #location {
-    padding-top: 7%;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 4.8px;
+    margin-bottom: 0;
   }
 
   #more-button {

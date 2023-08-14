@@ -7,15 +7,13 @@
 }
 
 #quote-generator-container {
-  height:;
-  padding: 10% 2% 10% 10%;
+  padding: 10% 2% 10% 5%;
+  display: flex;
   /*display: none;*/
 }
 
 #quote-generator-div {
-  display: grid;
-  grid-template-columns: 8fr 1fr;
-  max-width: 361px;
+  width: 90%;
 }
 
 #quote {
@@ -34,6 +32,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
+  cursor: pointer;
 }
 
 #author {
@@ -46,10 +45,7 @@
 }
 
 @media (min-width: 768px) {
-  #quote-generator-container {
 
-    padding-left: 64px;
-  }
   #quote-generator-div {
     grid-template-columns: 14fr 1fr;
     max-width: 80%;
@@ -80,16 +76,13 @@
 
   #quote-generator-container {
     height: 1000px;
-  padding-top: 5%; 
-  padding-right:2%; 
-  padding-bottom:0; 
-  padding-left:10%;
+    padding-top: 2%;
   
 }
 
 #quote-generator-div {
-  grid-template-columns: 14fr 1fr;
-  max-width: 65%;
+  width: 50%;
+  height: 100px;
 }
 
   #quote {
