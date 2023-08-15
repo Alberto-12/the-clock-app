@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import ArrowDown from "../../assets/desktop/icon-arrow-down.svg";
 import "./More.css";
 
-const More = ({ toggleLess, toggleGenerator }) => {
+const More = ({ toggleLess, toggleGenerator, timeData }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [time, setTime] = useState("");
-  const [abbreviation, setAbbreviation] = useState("");
   const [city, setCity] = useState("");
   const [countryCode, setCountryCode] = useState("");
 
@@ -15,32 +13,8 @@ const More = ({ toggleLess, toggleGenerator }) => {
   };
 
   useEffect(() => {
-    fetchTimeData();
-  }, []);
-
-  useEffect(() => {
     fetchLocationData();
   }, []);
-
-  const fetchTimeData = async () => {
-    try {
-      const response = await fetch(
-        "http://worldtimeapi.org/api/timezone/America/New_York"
-      );
-      const data = await response.json();
-
-      if (data && data.datetime && data.abbreviation) {
-        const datetime = new Date(data.datetime);
-        const hours = datetime.getHours();
-        const minutes = datetime.getMinutes().toString().padStart(2, "0");
-
-        setTime(`${hours}:${minutes}`);
-        setAbbreviation(data.abbreviation);
-      }
-    } catch (error) {
-      console.error("Error fetching time data:", error);
-    }
-  };
 
   const fetchLocationData = async () => {
     try {
@@ -65,7 +39,7 @@ const More = ({ toggleLess, toggleGenerator }) => {
           <p id="greeting">GOOD MORNING</p>
         </div>
         <div id="time-zone-div">
-          <span id="time">{time}</span><span id="abbreviation">{abbreviation}</span>
+          <span id="time">{timeData.datetime}</span><span id="abbreviation">{timeData.abbreviation}</span>
           {/*<p id="timeZone">BST</p>*/}
         </div>
         <div id="city-button-div">

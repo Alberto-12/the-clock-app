@@ -8,7 +8,7 @@ function App() {
     setShowLess(!showLess);
   };
 
-  const darkTheme = false;
+  const darkTheme = true;
 
   return (
     <div className="App">
