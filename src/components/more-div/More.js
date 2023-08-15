@@ -6,6 +6,7 @@ const More = ({ toggleLess, toggleGenerator, timeData }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [city, setCity] = useState("");
   const [countryCode, setCountryCode] = useState("");
+  const [greeting, setGreeting] = useState("");
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
@@ -32,11 +33,31 @@ const More = ({ toggleLess, toggleGenerator, timeData }) => {
     }
   };
 
+  useEffect(() => {
+    function getGreetingMessage() {
+      const currentHour = parseInt(timeData.datetime.split(":")[0], 10);
+    
+      if (currentHour >= 0 && currentHour < 12) {
+        return "GOOD MORNING";
+      } else if (currentHour >= 12 && currentHour < 18) {
+        return "GOOD AFTERNOON";
+      } else {
+        return "GOOD EVENING";
+      }
+    }
+    
+  
+    const updatedGreeting = getGreetingMessage();
+    setGreeting(updatedGreeting);
+  }, [timeData.datetime]);
+  
+
+
   return (
     <div id="more-container">
         <div id="greeting-div">
           <div id="icon"></div>
-          <p id="greeting">GOOD MORNING</p>
+          <p id="greeting">{greeting}</p>
         </div>
         <div id="time-zone-div">
           <span id="time">{timeData.datetime}</span><span id="abbreviation">{timeData.abbreviation}</span>
