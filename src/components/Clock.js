@@ -4,7 +4,7 @@ import More from "./more-div/More";
 import Less from "./less-div/Less";
 import "./Clock.css";
 
-const Clock = ({ darkTheme, showLess, toggleLess }) => {
+const Clock = ({ darkTheme, showLess, toggleLess, toggleDarkTheme }) => {
   const [showGenerator, setShowGenerator] = useState(true);
   const [timeData, setTimeData] = useState({
     datetime: "",
@@ -55,7 +55,7 @@ const Clock = ({ darkTheme, showLess, toggleLess }) => {
   return (
     <div id="container" className={darkTheme ? "dark" : ""}>
       {showGenerator && <Generator />}
-      <More toggleGenerator={toggleGenerator} timeData={timeData} />
+      <More toggleGenerator={toggleGenerator} timeData={timeData} toggleDarkTheme={toggleDarkTheme} />
       {showLess && <Less timeData={timeData} />}
     </div>
   );

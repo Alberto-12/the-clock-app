@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ArrowDown from "../../assets/desktop/icon-arrow-down.svg";
 import "./More.css";
 
-const More = ({ toggleLess, toggleGenerator, timeData }) => {
+const More = ({ toggleLess, toggleGenerator, timeData, toggleDarkTheme }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [city, setCity] = useState("");
   const [countryCode, setCountryCode] = useState("");
@@ -49,7 +49,13 @@ const More = ({ toggleLess, toggleGenerator, timeData }) => {
   
     const updatedGreeting = getGreetingMessage();
     setGreeting(updatedGreeting);
-  }, [timeData.datetime]);
+
+    if(updatedGreeting === "GOOD EVENING"){
+      toggleDarkTheme(true);
+    } else {
+      toggleDarkTheme(false);
+    }
+  }, [timeData.datetime, toggleDarkTheme]);
   
 
 
