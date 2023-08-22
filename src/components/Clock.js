@@ -23,7 +23,12 @@ const Clock = ({ darkTheme, showLess, toggleLess, toggleDarkTheme }) => {
   };
 
   useEffect(() => {
-    fetchTimeData();
+    fetchTimeData();//Fetch initial time data
+    const intervalId = setInterval(fetchTimeData, 1000); //Update time data every second
+
+    return () => {
+      clearInterval(intervalId);// Clean up the interval when the component unmounts
+    }
   }, []);
 
   const fetchTimeData = async () => {

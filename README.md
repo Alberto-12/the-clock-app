@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)Coming Soon
+![](./src/assets/Screenshot%202023-08-22%20at%2010-26-47%20The%20Clock%20App.png)
 
 
 
@@ -56,7 +56,7 @@ Users should be able to:
 
 ### What I learned
 
-So far I'm just improving my HTML, CSS, Skills I'm on the first fase of the project. Designing the responsive layout of the project.
+Just finished the challenge but I'll keep work on it just to make it a little more awesome where needed.
 
 Proud of this grid I created:
 ```css
