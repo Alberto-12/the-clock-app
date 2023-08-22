@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#more-container {
+  padding-top: 25%;
+  padding-left: 5%;
+  padding-bottom: 8%;
+}
+
+#greeting-div {
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+}
+
+#icon {
+  background-image: url("../../assets/desktop/icon-sun.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 23.56px;
+  height: 23.56px;
+}
+
+#greeting {
+  margin-left: 16.56px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#time-zone-div {
+  /*display: flex;
+  align-items: center;*/
+}
+
+#time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+#abbreviation {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+#location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+}
+
+/* Add these styles to your existing CSS file */
+
+.rotate-up {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+#more-button-div.rotate-up button {
+  background-color: red; /* Customize the button styles as needed */
+  color: white;
+}
+
+#more-button-div {
+  transition: all 0.5s ease-in-out; /* Slower transition duration */
+}
+
+#more-button-div button {
+  transition: all 0.5s ease-in-out; /* Slower transition duration */
+}
+
+#more-button-div {
+  background-color: #ffffff;
+  width: 115px;
+  height: 39px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#more-button {
+  width: 47px;
+  min-width: 47px;
+  border-radius: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  background-color: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3.75px;
+  opacity: 0.5;
+  margin-left: 10%;
+}
+
+#arrow-down-div {
+  width: 32px;
+  height: 32px;
+  margin-right: 2%;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#arrow-down {
+    transform: rotate(180deg);
+  }*/
+
+@media (min-width: 768px) {
+  #more-container {
+  }
+
+  #icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  #greeting {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  #time {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 175px;
+    line-height: 175px;
+    letter-spacing: -4.375px;
+  }
+
+  #timeZone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  #location {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  #more-button-div {
+    width: 146px;
+    height: 56px;
+  }
+
+  #more-button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 5px;
+  }
+
+  #arrow-down-div {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #more-container {
+    padding-top: 4%;
+    padding-bottom: 0;
+  }
+
+  #greeting {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 4px;
+  }
+
+  #time-zone-div{
+    height: 175px;
+  }
+
+  #time {
+    font-weight: 700;
+    line-height: 200px;
+    letter-spacing: -5px;
+  }
+
+  #timeZone {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  #city-button-div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
+
+  #location {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 4.8px;
+    margin-bottom: 0;
+  }
+
+  #more-button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 5px;
+  }
+}
