@@ -33,8 +33,9 @@ const Clock = ({ darkTheme, showLess, toggleLess, toggleDarkTheme }) => {
 
   const fetchTimeData = async () => {
     try {
+      const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
       const response = await fetch(
-        "https://worldtimeapi.org/api/timezone/America/New_York"
+        `https://worldtimeapi.org/api/timezone/${userTimezone}`
       );
       const data = await response.json();
 
