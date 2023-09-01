@@ -8,7 +8,15 @@ const Generator = () => {
 
   useEffect(() => {
     fetchQuote();
-  }, []);
+    // Set up an interval to fetch a new quote every 10 seconds
+    const intervalId = setInterval(fetchQuote, 20000);// 10000 milliseconds = 10 seconds
+
+    // Clean up the interval when the component unmounts or when the effect is re-run
+    return () => {
+      clearInterval(intervalId);
+    };
+
+  }, []);// Empty dependency array to run the effect only once on mount
 
   const fetchQuote = async () => {
     try {
