@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [ live site URL not there yet](https://your-live-site-url.com)
+- Live Site URL: [ live site URL](https://a-clock-app.netlify.app/)
 
 ## My process
 
