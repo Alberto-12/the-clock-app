@@ -23,17 +23,17 @@ const Clock = ({ darkTheme, showLess, toggleLess, toggleDarkTheme }) => {
   };
 
   useEffect(() => {
-    fetchTimeData();//Fetch initial time data
+    fetchTimeData(); //Fetch initial time data
     const intervalId = setInterval(fetchTimeData, 1000); //Update time data every second
 
     return () => {
-      clearInterval(intervalId);// Clean up the interval when the component unmounts
-    }
+      clearInterval(intervalId); // Clean up the interval when the component unmounts
+    };
   }, []);
 
   const fetchTimeData = async () => {
     try {
-      const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+      const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
       const response = await fetch(
         `https://worldtimeapi.org/api/timezone/${userTimezone}`
       );
@@ -61,7 +61,11 @@ const Clock = ({ darkTheme, showLess, toggleLess, toggleDarkTheme }) => {
   return (
     <div id="container" className={darkTheme ? "dark" : ""}>
       {showGenerator && <Generator />}
-      <More toggleGenerator={toggleGenerator} timeData={timeData} toggleDarkTheme={toggleDarkTheme} />
+      <More
+        toggleGenerator={toggleGenerator}
+        timeData={timeData}
+        toggleDarkTheme={toggleDarkTheme}
+      />
       {showLess && <Less timeData={timeData} />}
     </div>
   );
